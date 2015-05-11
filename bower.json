@@ -1,0 +1,24 @@
+{
+  "name": "web-photo-generator",
+  "version": "0.1.0",
+  "authors": [
+    "Michael Storgaard <git@mex.io>"
+  ],
+  "main": "PhotoGenerator.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fitbay/web-photo-generator",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "FontDetect": "git@github.com:JenniferSimonds/FontDetect.git#~3.0.1"
+  }
+}
