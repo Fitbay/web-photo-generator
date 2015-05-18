@@ -168,7 +168,7 @@ define([
      */
     PhotoGenerator.prototype.ensureAllowedUrl = function (url) {
         if (!url.match(new RegExp("^" + window.location.protocol + "//" + window.location.host, "i")) && this._config.imageProxyUrl) {
-            url = this._config.imageProxyUrl + btoa(url);
+            url = this._config.imageProxyUrl + encodeURIComponent(btoa(url));
         }
         return url;
     };
