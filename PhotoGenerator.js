@@ -1,6 +1,6 @@
 define([
     "jquery",
-    "font_detect"
+    "FontDetect"
 ], function ($, FontDetect) {
 
     "use strict";
