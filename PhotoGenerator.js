@@ -262,8 +262,8 @@ define([
                 dimensions = this._calculcateDimensions(brand, size),
                 direction = "south";
 
-            var x = this._width * tag.position.tlcX,
-                y = this._height * tag.position.tlcY,
+            var x = this._width * tag.position.tlc_x,
+                y = this._height * tag.position.tlc_y,
                 width = dimensions.width,
                 height = dimensions.height;
             if (tag.product.brand.logo) {
@@ -323,7 +323,7 @@ define([
                 //Use clip to cut corners off of affiliate image
                 this._constructLabel(labelX, labelY, width, height);
                 this._context.clip();
-                this._constructBrandLogo(tag.product.brand.el, labelX, labelY, this._config.brandWidth, height, tag.product.brand.logo.prevailHex);
+                this._constructBrandLogo(tag.product.brand.el, labelX, labelY, this._config.brandWidth, height, tag.product.brand.logo.prevail_hex);
                 this._context.restore();
                 //Clean up image element
                 delete tag.product.brand.el;
